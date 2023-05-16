@@ -56,7 +56,7 @@ export function VerticesSix(props: JSX.IntrinsicElements["group"]) {
     <group {...props} dispose={null}>
       {arr.map((texture, idx) => (
         <mesh key={texture.id} castShadow receiveShadow geometry={geometrysArr[idx]} material={materialsArr[idx]}>
-          <meshBasicMaterial attach={`material`} map={texture} side={THREE.TwoPassDoubleSide} />
+          {/* <meshBasicMaterial attach={`material`} map={texture} side={THREE.TwoPassDoubleSide} /> */}
         </mesh>
       ))}
     </group>

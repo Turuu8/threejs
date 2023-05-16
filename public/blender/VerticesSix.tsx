@@ -56,7 +56,7 @@ export function VerticesSix(props: JSX.IntrinsicElements["group"]) {
     <group {...props} dispose={null}>
       {arr.map((texture, idx) => (
         <mesh key={texture.id} castShadow receiveShadow geometry={geometrysArr[idx]} material={materialsArr[idx]}>
-          {/* <meshBasicMaterial attach={`material`} map={texture} side={THREE.TwoPassDoubleSide} /> */}
+          <meshBasicMaterial attach={`material`} map={texture} side={THREE.TwoPassDoubleSide} />
         </mesh>
       ))}
     </group>
@@ -64,22 +64,3 @@ export function VerticesSix(props: JSX.IntrinsicElements["group"]) {
 }
 
 useGLTF.preload("/blender/vertices6.glb");
-
-export function Images() {
-  // videos
-  const arr = [
-    useVideoTexture("videos/vid1.mp4"),
-    useVideoTexture("videos/vid2.mp4"),
-    useVideoTexture("videos/vid3.mp4"),
-    useVideoTexture("videos/vid4.mp4"),
-    useVideoTexture("videos/vid5.mp4"),
-    useVideoTexture("videos/vid6.mp4"),
-  ];
-  return (
-    <>
-      {arr.map((texture, idx) => (
-        <meshBasicMaterial key={texture.id} attach={`material`} map={texture} side={THREE.TwoPassDoubleSide} />
-      ))}
-    </>
-  );
-}

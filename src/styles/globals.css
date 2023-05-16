@@ -1,29 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.cdnfonts.com/css/inter");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-@layer components { 
-    .flexrow{ 
-        @apply flex flex-row
-    };
-    .flexcol{ 
-        @apply flex flex-col
-    }
+@layer components {
+  .flexrow {
+    @apply flex flex-row;
+  }
+  .flexcol {
+    @apply flex flex-col;
+  }
 }
-@layer base { 
-    body { 
-        background-color: #CCCCCC;
-    };
-  
+@layer base {
+  body {
+    background: #cccccc;
+  }
 }
-span{ 
-    font-weight: 400;
-    color: #000;
+span {
+  font-weight: 300;
+  color: #000;
 }

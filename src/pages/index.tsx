@@ -13,10 +13,9 @@ export default function Home() {
   return (
     <div className=" flex items-center justify-center flex-col">
       <div className="w-full h-[100vh] flex flex-col items-center justify-center bg-[#1c8bfa22]">
-        <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
-          <mesh scale={2.3}>
-            {/* <HollowCylinderGeometry /> */}
-            {/* <meshPhongMaterial>
+        <Canvas camera={{ position: [5, -1, 0], fov: 14 }}>
+          {/* <HollowCylinderGeometry /> */}
+          {/* <meshPhongMaterial>
               <RenderTexture attach="map">
                 <Text fontSize={3}> hello</Text>
                 <Image url="/imgs/event6.jpeg" />
@@ -25,9 +24,8 @@ export default function Home() {
             <Suspense fallback={null}>
               <Images />
             </Suspense> */}
-            <D6Model />
-          </mesh>
-          <OrbitControls enableZoom={false} minPolarAngle={1.3} maxPolarAngle={Math.PI / 1.6} />
+          <D6Model />
+          <OrbitControls enableZoom={false} minPolarAngle={1.45} maxPolarAngle={Math.PI / 1.85} />
         </Canvas>
       </div>
       {/* -------------------------------------- TEST -------------------------------------- */}

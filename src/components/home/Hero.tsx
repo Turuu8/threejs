@@ -1,6 +1,6 @@
 export const HeroSection = () => {
   return (
-    <section className="w-full h-[70vh] flex items-end justify-center max-[1024px]:mb-[35vh] max-[768px]:h-[60vh] max-[768px]:mb-[30vh] max-[425px]:h-[45vh] max-[425px]:mb-[10.9vh]">
+    <section className="w-full h-[100vh] flex items-center justify-center">
       <div className="flexcol justify-center items-center max-[1600px]:gap-[10px] max-[1024px]:gap-[5px] max-[768px]:gap-[3px]  max-[425px]:gap-0 ">
         <h1 className="font-['Italiana'] font-[400] text-[128px] leading-[150px] max-[1600px]:text-[90px] max-[1600px]:leading-[95px] max-[768px]:text-[70px] max-[768px]:leading-[75px] max-[640px]:text-[55px] max-[640px]:leading-[60px] max-[425px]:text-[36px] max-[425px]:leading-[42px]">
           UB EVENTS

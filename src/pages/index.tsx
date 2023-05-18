@@ -7,7 +7,7 @@ export default function Home() {
       <div className="w-full max-w-[1920px] m-auto px-[60px] max-[1600px]:px-[45px] max-[768px]:px-[32px]">
         <HeroSection />
         <section className="relative">
-          <div className="w-full h-[100vh] flexrow justify-between max-[1024px]:grid max-[1024px]:grid-rows-[auto_auto] max-[1024px]:gap-[100px] max-[1024px]:h-[60vh] max-[768px]:h-[50vh] max-[425px]:h-[30vh]">
+          <div className="w-full h-[100vh] flexrow justify-between max-[1024px]:grid max-[1024px]:grid-rows-[auto_32vh] max-[1024px]:gap-[100px] max-[1024px]:h-auto max-[768px]:grid-rows-[auto_26vh] max-[580px]:grid-rows-[auto_22vh] max-[480px]:grid-rows-[auto_20vh] max-[425px]:gap-[50px] max-[425px]:grid-rows-[auto_18vh]">
             <div className="w-[60%] h-full flex items-center justify-center max-[1024px]:w-full">
               <Model />
             </div>
@@ -26,3 +26,5 @@ export default function Home() {
     </main>
   );
 }
+
+// max-[768px]:h-[50vh] max-[425px]:h-[30vh]

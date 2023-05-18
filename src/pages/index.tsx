@@ -20,9 +20,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="h-[100vh] max-[1024px]:hidden">
-            <Model />
-          </div>
+          <div className="h-[100vh] max-[1024px]:hidden">{/* <Model /> */}</div>
         </section>
         <Usage />
         <ThanksWeb />

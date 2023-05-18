@@ -10,7 +10,15 @@ export const Model = () => {
     <>
       <Canvas camera={{ position: [5, 0, 0], fov: fov >= 1921 ? 43 : fov >= 1025 ? 33 : 13 }}>
         <Hexagon />
-        <OrbitControls enableZoom={false} minPolarAngle={1.45} maxPolarAngle={Math.PI / 1.85} autoRotate enableRotate={true} autoRotateSpeed={5} />
+        <OrbitControls
+          enableZoom={false}
+          minPolarAngle={1.45}
+          maxPolarAngle={Math.PI / 1.85}
+          autoRotate
+          enableRotate={true}
+          autoRotateSpeed={5}
+          rotateSpeed={0.5}
+        />
       </Canvas>
     </>
   );

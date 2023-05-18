@@ -3,7 +3,7 @@ import { ThanksWeb } from "@/components";
 import React, { useEffect, useState } from "react";
 
 const about = () => {
-  const [inner, setInner] = useState(window.innerWidth | 0);
+  const [inner, setInner] = useState(0);
   useEffect(() => {
     const onSize = (e: any) => {
       setInner(e.target.innerWidth);

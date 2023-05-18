@@ -29,19 +29,22 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 h-[130px] w-full max-[1600px]:h-[95px] z-10 duration-[0.3s] max-[1024px]:h-[70px] ${
+      className={`fixed top-0 h-[130px] w-full max-[1600px]:h-[95px] z-10 duration-[0.3s] max-[1024px]:h-[70px] max-[768px]:h-[60px] ${
         show && "top-[-130px] max-[1600px]:top-[-95px]"
       } ${navbar && "bg-[#ccc]"} `}
     >
-      <div className="max-w-[1920px] m-auto h-full px-[60px] items-center flexrow justify-between max-[1600px]:px-[45px]">
+      <div className="max-w-[1920px] m-auto h-full px-[60px] items-center flexrow justify-between max-[1600px]:px-[45px] max-[768px]:px-[32px]">
         <button
           onClick={() => {
             router.push("/");
           }}
         >
-          <h1 className="text-[30px] font-['Poppins'] font-[900] max-[1600px]:text-[21px]"> UB Events</h1>
+          <h1 className="text-[30px] font-['Poppins'] font-[900] max-[1600px]:text-[21px] max-[768px]:text-[18px] max-[480px]:text-[14px] max-[425px]:text-[14px] max-[425px]:leading-[16px]">
+            {" "}
+            UB Events
+          </h1>
         </button>
-        <div className="flexrow gap-[32px] font-['Inter'] font-[300] text-[18px] max-[1600px]:text-[13px] max-[1600px]:gap-[25px]">
+        <div className="flexrow gap-[32px] font-['Inter'] font-[300] text-[18px] max-[1600px]:text-[13px] max-[1600px]:gap-[25px] max-[768px]:text-[12px] max-[480px]:text-[12px] max-[425px]:text-[10px] max-[425px]:gap-[16px]">
           {list.map((el, i) => {
             return (
               <button

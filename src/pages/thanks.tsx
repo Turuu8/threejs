@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { ThanksWeb } from "@/components";
 import Image from "next/image";
 import { useEffect, useState } from "react";

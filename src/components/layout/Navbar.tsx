@@ -1,11 +1,38 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const Navbar = () => {
+  const [show, setShow] = useState(false);
+  const [navbar, setNavbar] = useState(false);
+
   const router = useRouter();
+
+  // hide navigation bar functionality
+  useEffect(() => {
+    let lastScrollY = window.pageYOffset;
+    const updateScroll = () => {
+      const scrollY = window.pageYOffset;
+      if (lastScrollY > scrollY) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+      lastScrollY = scrollY;
+      setNavbar(window.pageYOffset > 80);
+    };
+    window.addEventListener("scroll", updateScroll); // add event listener
+    return () => {
+      window.removeEventListener("scroll", updateScroll); // clean up
+    };
+  }, [show]);
+
   return (
-    <div className="fixed top-0 h-[130px] w-full max-[1600px]:h-[95px] max-[1024px]:h-[70px]">
+    <div
+      className={`fixed top-0 h-[130px] w-full max-[1600px]:h-[95px] z-10 duration-[0.3s] max-[1024px]:h-[70px] ${
+        show && "top-[-130px] max-[1600px]:top-[-95px]"
+      } ${navbar && "bg-[#ccc]"} `}
+    >
       <div className="max-w-[1920px] m-auto h-full px-[60px] items-center flexrow justify-between max-[1600px]:px-[45px]">
         <button
           onClick={() => {

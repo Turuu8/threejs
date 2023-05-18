@@ -16,9 +16,13 @@
 }
 @layer base {
   body {
-    background: #cccccc;
+    background-color: #ccc;
+  }
+  canvas {
+    width: 100%;
   }
 }
+
 span {
   font-weight: 300;
   color: #000;

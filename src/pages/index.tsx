@@ -23,7 +23,7 @@ export default function Home() {
           {/* <div className="h-[100vh] max-[1024px]:hidden"><Model /></div> */}
         </section>
         <Usage />
-        <ThanksWeb />
+        {/* <ThanksWeb /> */}
       </div>
     </main>
   );

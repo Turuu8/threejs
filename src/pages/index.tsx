@@ -3,7 +3,7 @@ import { Description, HeroSection, Model, ThanksWeb, Usage } from "@/components"
 export default function Home() {
   return (
     <main className="w-full relative">
-      {/* <video src="/videos/background.mov" autoPlay loop muted className="fixed z-[-1] opacity-[1]" /> */}
+      <video src="/videos/background.mov" autoPlay loop muted className="fixed z-[-1] opacity-[1]" /> 
       <div className="w-full max-w-[1920px] m-auto px-[60px] max-[1600px]:px-[45px] max-[768px]:px-[32px]">
         <HeroSection />
         <section className="relative">

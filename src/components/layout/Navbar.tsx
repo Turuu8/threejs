@@ -31,7 +31,7 @@ export const Navbar = () => {
     <div
       className={`fixed top-0 h-[130px] w-full max-[1600px]:h-[95px] z-10 duration-[0.3s] max-[1024px]:h-[70px] max-[768px]:h-[60px] ${
         show && "top-[-130px] max-[1600px]:top-[-95px]"
-      } ${navbar && "bg-[#ccc]"} `}
+      } ${navbar && "backdrop-blur"} `}
     >
       <div className="max-w-[1920px] m-auto h-full px-[60px] items-center flexrow justify-between max-[1600px]:px-[45px] max-[768px]:px-[32px]">
         <button

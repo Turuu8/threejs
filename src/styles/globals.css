@@ -27,11 +27,11 @@
   p,
   span,
   div {
-    color: #12121f;
+    color: #fff;
   }
 }
 
 span {
   font-weight: 300;
-  color: #000;
+  color: #fff;
 }

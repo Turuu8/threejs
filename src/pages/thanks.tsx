@@ -24,7 +24,7 @@ const thanks = () => {
             return (
               <div key={i} className={`${i === 4 && "col-span-2 w-[50%] m-auto px-[4.5px] sm:px-[6px]  md:col-span-1 md:w-full md:px-0"} `}>
                 <div className="w-full h-[200px] bg-[#D9D9D9] sm:h-[320px] md:h-[280px] lg:h-[220px] xl:h-[320px] 2xl:h-[430px]">
-                  {/* <Image/> */}
+                  <Image src={el.image} width={500} height={500} alt="img" className="w-full h-full" />
                 </div>
                 <div className="flexcol gap-[8px] pt-[12px] font-['Inter'] font-[300] xl:flexrow xl:gap-[0] xl:tracking-[-0.04em] xl:pt-[16px] 2xl:pt-[24px]">
                   <h2 className="text-[10px] leading-[12px] sm:text-[14px] sm:leading-[16px] lg:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
@@ -82,11 +82,26 @@ const teamList = [
   {
     tag: "БАГИЙН АХЛАГЧ",
     name: "Т. ДОЛЖИНСҮРЭН",
-    image: "",
+    image: "https://shorturl.at/vxJ17",
   },
   {
     tag: "ХӨГЖҮҮЛЭГЧ",
     name: "Г. ТӨРХМӨНХ",
+    image: "https://shorturl.at/xCSY2",
+  },
+  {
+    tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "З. БИЛГҮҮН",
+    image: "",
+  },
+  {
+    tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "Х. ОЮУЭРДЭНЭ",
+    image: "",
+  },
+  {
+    tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "ТӨГСЖАРГАЛ",
     image: "",
   },
   {

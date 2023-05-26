@@ -16,8 +16,6 @@ export default function Home() {
     return () => window.removeEventListener("scroll", screenScroll);
   }, []);
 
-  console.log(scroll);
-
   return (
     <main className="w-full relative">
       <video src="/videos/background.mov" autoPlay loop muted className="fixed z-[-1] opacity-[1] h-[100vh]" />

@@ -19,7 +19,7 @@ const thanks = () => {
             нь шатны сургалтаар маш их зүйлийг сурч, өөрсдийнхөө сонирхол чаддаг зүйлсээ мэдэж авч үр бүтээлтэй өнгөрүүллээ.
           </p>
         </section>
-        <section className="grid gap-x-[18px] gap-y-[32px] grid-cols-2 sm:gap-x-[24px] md:grid-cols-3 lg:grid-cols-5 lg:gap-x-[18px] xl:gap-x-[18px] 2xl:gap-x-[24px]">
+        <section className="grid gap-x-[18px] gap-y-[50px] grid-cols-2 sm:gap-x-[24px] md:grid-cols-3 lg:grid-cols-5 lg:gap-x-[18px] xl:gap-x-[18px] 2xl:gap-x-[24px]">
           {teamList.map((el, i) => {
             return (
               <div key={i} className={`${i === 4 && "col-span-2 w-[50%] m-auto px-[4.5px] sm:px-[6px]  md:col-span-1 md:w-full md:px-0"} `}>
@@ -29,7 +29,7 @@ const thanks = () => {
                 <div className="flexcol gap-[8px] pt-[12px] font-['Inter'] font-[300] xl:flexrow xl:gap-[0] xl:tracking-[-0.04em] xl:pt-[16px] 2xl:pt-[24px]">
                   <h2 className="text-[10px] leading-[12px] sm:text-[14px] sm:leading-[16px] lg:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
                     {el.tag}
-                    {inner >= 1439 && <>&nbsp;: &nbsp; </>}{" "}
+                    {/* {inner >= 1439 && <>&nbsp;: &nbsp; </>}{" "} */}
                   </h2>
                   <h1 className="text-[12px] leading-[14px] sm:text-[16px] sm:leading-[18px] xl:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
                     {el.name}
@@ -57,9 +57,9 @@ const thanks = () => {
                     {/* <Image/> */}
                   </div>
                   <div className="flexcol gap-[8px] pt-[12px] font-['Inter'] font-[300] xl:flexrow xl:gap-[0] xl:tracking-[-0.04em] xl:pt-[16px] 2xl:pt-[24px]">
-                    <h2 className="text-[10px] leading-[12px] sm:text-[16px] sm:leading-[18px] xl:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
+                    <h2 className="text-[10px] leading-[12px] uppercase sm:text-[16px] sm:leading-[18px] xl:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
                       {el.tag}
-                      {inner >= 1440 && <>&nbsp;: &nbsp; </>}{" "}
+                      {/* {inner >= 1440 && <>&nbsp;: &nbsp; </>}{" "} */}
                     </h2>
                     <h1 className="text-[12px] leading-[14px] sm:text-[16px] sm:leading-[18px] xl:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
                       {el.name}
@@ -80,42 +80,42 @@ export default thanks;
 
 const teamList = [
   {
-    tag: "БАГИЙН АХЛАГЧ",
-    name: "Т. ДОЛЖИНСҮРЭН",
+    // tag: "БАГИЙН АХЛАГЧ",
+    name: "ЖАВХЛАНТӨГС",
     image: "https://shorturl.at/vxJ17",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "Г. ТӨРХМӨНХ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "БИЛГҮҮНДӨН",
     image: "https://shorturl.at/xCSY2",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "ТЭРГЭЛТЭНГИС",
+    image: "",
+  },
+  {
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "УГТАХБАЯР",
+    image: "",
+  },
+  {
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "ДАШНЯАМ",
+    image: "",
+  },
+  {
+    // tag: "ХӨГЖҮҮЛЭГЧ",
     name: "З. БИЛГҮҮН",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
     name: "Х. ОЮУЭРДЭНЭ",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "ТӨГСЖАРГАЛ",
-    image: "",
-  },
-  {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "З. БИЛГҮҮН",
-    image: "",
-  },
-  {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "Х. ОЮУЭРДЭНЭ",
-    image: "",
-  },
-  {
-    tag: "ХӨГЖҮҮЛЭГЧ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
     name: "ТӨГСЖАРГАЛ",
     image: "",
   },
@@ -123,62 +123,62 @@ const teamList = [
 
 const glassList = [
   {
-    tag: "БАГИЙН АХЛАГЧ",
+    // tag: "БАГИЙН АХЛАГЧ",
     name: "Т. ДОЛЖИНСҮРЭН",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
     name: "Г. ТӨРХМӨНХ",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
     name: "З. БИЛГҮҮН",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
     name: "Х. ОЮУЭРДЭНЭ",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "ТӨГСЖАРГАЛ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "ТЭНГИС",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "ТӨГСЖАРГАЛ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "Б. БИЛГҮҮН",
     image: "",
   },
   {
-    tag: "БАГИЙН АХЛАГЧ",
-    name: "Т. ДОЛЖИНСҮРЭН",
+    // tag: "БАГИЙН АХЛАГЧ",
+    name: "Н. ГАНЗОРИГ",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "Г. ТӨРХМӨНХ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "ТЭМҮҮЖИН",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "З. БИЛГҮҮН",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "Г. МӨНХБОЛД",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "Х. ОЮУЭРДЭНЭ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "МАНДАХ",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
-    name: "ТӨГСЖАРГАЛ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
+    name: "",
     image: "",
   },
   {
-    tag: "ХӨГЖҮҮЛЭГЧ",
+    // tag: "ХӨГЖҮҮЛЭГЧ",
     name: "ТӨГСЖАРГАЛ",
     image: "",
   },

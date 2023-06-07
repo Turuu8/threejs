@@ -3,7 +3,7 @@ import { Html, useProgress } from "@react-three/drei";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();
-  const { setLoading } = useLoader();
+  const { setLoading } = useLoader()  as { setLoading : any};
   progress >= 70 ? setLoading(true) : setLoading(false);
   return (
     <Html

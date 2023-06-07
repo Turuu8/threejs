@@ -27,10 +27,6 @@ const thanks = () => {
                   <Image src={el.image} width={500} height={500} alt="img" className="w-full h-full" />
                 </div>
                 <div className="flexcol gap-[8px] pt-[12px] font-['Inter'] font-[300] xl:flexrow xl:gap-[0] xl:tracking-[-0.04em] xl:pt-[16px] 2xl:pt-[24px]">
-                  <h2 className="text-[10px] leading-[12px] sm:text-[14px] sm:leading-[16px] lg:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
-                    {el.tag}
-                    {/* {inner >= 1439 && <>&nbsp;: &nbsp; </>}{" "} */}
-                  </h2>
                   <h1 className="text-[12px] leading-[14px] sm:text-[16px] sm:leading-[18px] xl:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
                     {el.name}
                   </h1>
@@ -57,10 +53,6 @@ const thanks = () => {
                     {/* <Image/> */}
                   </div>
                   <div className="flexcol gap-[8px] pt-[12px] font-['Inter'] font-[300] xl:flexrow xl:gap-[0] xl:tracking-[-0.04em] xl:pt-[16px] 2xl:pt-[24px]">
-                    <h2 className="text-[10px] leading-[12px] uppercase sm:text-[16px] sm:leading-[18px] xl:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
-                      {el.tag}
-                      {/* {inner >= 1440 && <>&nbsp;: &nbsp; </>}{" "} */}
-                    </h2>
                     <h1 className="text-[12px] leading-[14px] sm:text-[16px] sm:leading-[18px] xl:text-[14px] xl:leading-[16px] 2xl:text-[18px] 2xl:leading-[21px]">
                       {el.name}
                     </h1>

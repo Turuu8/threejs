@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { ThanksWeb } from "@/components";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const about = () => {
@@ -41,10 +42,12 @@ const about = () => {
                 } ${i === 0 && "max-[425px]:col-span-2 max-[425px]:pl-[26%] "}`}
               >
                 <div
-                  className={`h-[430px] w-fill bg-[#D9D9D9] max-[1600px]:h-[320px] max-[1280px]:h-[260px] max-[1024px]:h-[230px] max-[940px]:h-[270px] max-[640px]: max-[640px]:h-[230px] max-[425px]:h-[200px] ${
+                  className={`h-[430px] w-fill max-[1600px]:h-[320px] max-[1280px]:h-[260px] max-[1024px]:h-[230px] max-[940px]:h-[270px] max-[640px]: max-[640px]:h-[230px] max-[425px]:h-[200px] ${
                     i === 0 && " max-[425px]:w-[66%] "
                   }`}
-                ></div>
+                >
+                  <Image alt="image" src={el.image} width={500} height={500} className="w-full h-full object-contain" />
+                </div>
                 <h1
                   className={`font-['Inter'] font-[300] text-[18px] tracking-normal max-[1800px]:tracking-[-0.039em] max-[1760px]:text-[16px] max-[1600px]:text-[13px] max-[1280px]:text-[14px] max-[1280px]:tracking-normal max-[805px]:text-[12px] max-[425px]:text-[10px] max-[425px]:leading-[12px] ${
                     i === 0 && "max-[425px]:pl-[17%] "
@@ -68,12 +71,12 @@ const teamList = [
   {
     tag: "БАГИЙН АХЛАГЧ",
     name: "Т. ДОЛЖИНСҮРЭН",
-    image: "",
+    image: "/image/DSC00406.jpg",
   },
   {
     tag: "ХӨГЖҮҮЛЭГЧ",
     name: "Г. ТӨРХМӨНХ",
-    image: "",
+    image: "/image/DSC09129.jpg",
   },
   {
     tag: "ХӨГЖҮҮЛЭГЧ",
@@ -88,6 +91,6 @@ const teamList = [
   {
     tag: "ХӨГЖҮҮЛЭГЧ",
     name: "ТӨГСЖАРГАЛ",
-    image: "",
+    image: "/image/DSC00395.jpg",
   },
 ];
